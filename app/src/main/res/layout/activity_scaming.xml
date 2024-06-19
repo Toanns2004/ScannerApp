@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.scaming.ScamingActivity">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/preview"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_back_scaming"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:tint="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        >
+        <ImageButton
+            android:id="@+id/btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_photo"
+            android:background="@drawable/custom_circle_button"
+            android:backgroundTint="@color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp"/>
+        <ImageButton
+            android:id="@+id/btn_scan_scam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camea"
+            android:background="@drawable/custom_circle_button"
+            android:padding="24dp"
+            android:layout_margin="20dp"/>
+        <ImageButton
+            android:id="@+id/btn_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_flash_on"
+            android:background="@drawable/custom_circle_button"
+            android:backgroundTint="@color/white"
+            android:padding="16dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

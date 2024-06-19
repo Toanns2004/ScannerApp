@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#4E88FE</color>
+    <color name="red">#E80F0F</color>
+    <color name="green">#E3FDE4</color>
+    <color name="purple">#F3E5F5</color>
+    <color name="time">#E3F2FD</color>
+    <color name="icon">#9E9E9E</color>
+    <color name="orange">#FF5C00</color>
+    <color name="supp">#FFF2E4</color>
+    <color name="pink">#FDE3F3</color>
+    <color name="item_qr">#F8FAFF</color>
+    <color name="text">#FFF9E0</color>
+    <color name="vip">#F6E1AC</color>
+    <color name="pay_vip">#EDF2FF</color>
+    <color name="yellow">#FFC700</color>
+
+    <color name="website">#FFF2E4</color>
+    <color name="wifi">#EFE5FF</color>
+    <color name="phone">#E2FFE4</color>
+    <color name="sms">#E9ECFF</color>
+    <color name="what_app">#E9F5EA</color>
+    <color name="viber">#EEDDFF</color>
+
+</resources>

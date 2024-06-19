@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_item_history"
+    android:backgroundTint="@color/item_qr"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/item_qr"
+    >
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/icon_qr" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/image_item"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guiline Name QR"
+
+            android:id="@+id/text1_item_history"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/text2_item_history"
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:text="http://.google.com/search?ffffffffffffffffffffffffffff"
+            android:textSize="11dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/icon_share_item_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icon_share" />
+
+    <ImageButton
+        android:id="@+id/icon_remove_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="3dp"
+
+        android:layout_toStartOf="@+id/icon_share_item_history"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icon_trash_can" />
+
+
+
+</RelativeLayout>

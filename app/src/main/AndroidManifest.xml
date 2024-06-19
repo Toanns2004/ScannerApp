@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".data.ApplicationDa"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Scanner_QR"
+        tools:targetApi="31">
+        <activity
+            android:name=".views.activities.myqr.CheckQrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.ads.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.activities.vip.VipBuyedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.vip.VipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.generate.GenerateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.scaming.ScamingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.after.AfterScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.main.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Scanner_QR"></activity>
+        <activity
+            android:name=".views.activities.frames.FrameActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            tools:replace="android:screenOrientation" />
+    </application>
+
+</manifest>
